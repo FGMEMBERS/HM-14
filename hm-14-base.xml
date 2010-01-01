@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <aircraft-version>1.0</aircraft-version>
+    <status>Alpha</status>
+
+    <startup>
+      <splash-texture>Aircraft/HM-14/hm-14-splash.png</splash-texture>
+      <splash-title>HM 14 Pou du Ciel</splash-title>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/HM-14/Sounds/hm-14-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/HM-14/Models/hm-14.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>HM 14 : Pou du Ciel</title>
+    </help>
+
+    <menubar include="Dialogs/hm-14-menu.xml"/>
+
+  </sim>
+  
+  <consumables>
+    <fuel>
+      <tank n="0">
+       <level-gal_us>20</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <engines>
+    <engine>
+      <rpm type="double">10</rpm>
+    </engine>
+  </engines>
+
+  <input>
+    <keyboard include="Nasal/hm-14-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <hm14>
+      <file>Aircraft/HM-14/Nasal/liveries.nas</file>
+    </hm14>
+  </nasal>
+   
+</PropertyList>
