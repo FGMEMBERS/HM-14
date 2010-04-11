@@ -4,7 +4,7 @@
 <PropertyList include="hm-14-yasim-cnf.xml">
 
   <sim>
-    <description>Dassault/Dornier Alphajet</description>
+    <description>HM 14 Pou du Ciel</description>
     <author>BARANGER Emmanuel (3D/FDM)</author>
   </sim>
 
