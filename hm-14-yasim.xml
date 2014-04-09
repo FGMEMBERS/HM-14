@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Masse sans carburant -->
 <airplane mass="441">
@@ -60,23 +60,24 @@
 
   <!-- -->
   <propeller x="2.163" y="0.00" z="0.074"
+             mass="15" 
+             moment="3.24"  
              radius="1.15"
-	     cruise-speed="65" 
-	     cruise-rpm="2263"
-	     cruise-alt="3000" 
-	     cruise-power="15"
-	     takeoff-power="20" 
-	     takeoff-rpm="2387"
-	     mass="15" 
-	     moment="3.24"  
-	     gear-ratio="0.412" >
+             cruise-speed="65" 
+             cruise-rpm="2263"
+             cruise-alt="3000" 
+             cruise-power="15"
+             takeoff-power="20" 
+             takeoff-rpm="2387"
+             gear-ratio="0.412" >
              <actionpt x="2.517" y="0" z="0.335"/>
              <piston-engine eng-rpm="2700" 
-                            eng-power="20"/>
-             <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
-             <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
-             <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
-             <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
+                            eng-power="20">
+                            <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+                            <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
+                            <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+                            <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+             </piston-engine>
   </propeller>
 
   <!-- Roue gauche -->
