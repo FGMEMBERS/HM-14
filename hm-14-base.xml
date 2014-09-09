@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="Systems/views.xml">
+
+    <description>HM 14 Pou du Ciel (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>1.0</aircraft-version>
+    <status>Alpha</status>
+
+    <startup>
+      <splash-texture>Aircraft/HM-14/hm-14-splash.png</splash-texture>
+      <splash-title>HM 14 Pou du Ciel</splash-title>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/HM-14/Sounds/hm-14-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/HM-14/Models/hm-14.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                      <!-- 0 immat -->
+        <int type="int" n="1">  0 </int>                                      <!-- 1 immat -->
+        <int type="int" n="2">  0 </int>                                      <!-- 2 immat -->
+        <int type="int" n="3">  0 </int>                                      <!-- 3 immat -->
+        <int type="int" n="4">  0 </int>                                      <!-- 4 immat -->
+        <int type="int" n="5">  0 </int>                                      <!-- 5 immat -->
+        <int type="bool" n="6"> 1 </int>                                      <!-- 6 smoke/bomb/torpedo -->
+        <int type="bool" n="7" alias="/model/show-immat"> 1 </int>            <!-- 7 Show Immat -->
+        <int n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int>  <!-- 8 nav-lights -->
+        <int n="9" alias="/sim/model/lights/beacon/state">  false </int>      <!-- 9 strobe-lights -->
+        <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                 <!-- altitude for MP shadow -->
+        <float n="3" alias="/position/altitude-ft"> 0 </float>                <!-- altitude for Smoke/Trail -->
+        <float n="4" alias="/engines/engine[0]/rpm"/>
+        <float n="5" alias="/engines/engine[0]/cranking"/>
+        <float n="6" alias="/gear/gear[0]/wow/"/>
+        <float n="7" alias="/gear/gear[1]/wow/"/>
+        <float n="8" alias="/gear/gear[2]/wow/"/>
+        <float n="9" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="10" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="11" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+    
+    <help include="Systems/help.xml"/>
+
+    <menubar include="Dialogs/hm-14-menu.xml"/>
+
+  </sim>
+  
+  <consumables>
+    <fuel>
+      <tank n="0">
+       <level-gal_us>20</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <engines>
+    <engine>
+      <rpm type="double">10</rpm>
+    </engine>
+  </engines>
+
+  <input>
+    <keyboard include="Systems/hm-14-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <!--
+    <doors>
+      <file>Aircraft/HM-14/Nasal/doors.nas</file>
+    </doors>
+    -->
+    <hm14>
+      <file>Aircraft/HM-14/Nasal/liveries.nas</file>
+    </hm14>
+  </nasal>
+   
+</PropertyList>

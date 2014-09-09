@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <model>
+    <path>Aircraft/HM-14/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m> -0.309 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/HM-14/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m> -0.182 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/HM-14/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m> -0.100 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/HM-14/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> 0.023 </x-m>
+      <y-m> 0.075 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/HM-14/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m> 0.023 </x-m>
+      <y-m> 0.228 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/HM-14/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> 0.023 </x-m>
+      <y-m> 0.309 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
