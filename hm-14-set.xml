@@ -17,6 +17,18 @@
       <cockpit type="int"> 1 </cockpit>
       <model type="int">   4 </model>
     </rating>
+
+    <tags>
+      <tag>ga</tag>
+      <tag>1930s</tag>
+      <tag>fixed-gear</tag>
+      <tag>tail-dragger</tag>
+      <tag>biplane</tag>
+      <tag>piston</tag>
+      <tag>propeller</tag>
+      <tag>fixed-pitch</tag>
+      <tag>single-engine</tag>
+    </tags>
     
   </sim>
 
